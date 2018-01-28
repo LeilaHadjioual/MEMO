@@ -14,7 +14,7 @@ lien sur le site getcomposer.org
 
 
 2. dans l'invite de commande, taper :  
-$ composer create-project --prefer-dist laravel/laravel blog (*blog* : le nom du projet à créer)
+$ composer create-project --prefer-dist laravel/laravel blog (*blog*:nom du projet à créer)
 
 
 3. taper dans l'invite de commande :    
