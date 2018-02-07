@@ -1,6 +1,7 @@
-﻿##MEMO POO
+﻿#MEMO POO
 
-
+faire de son site un ensemble d'objets qui interagissent entre eux.  
+En d'autres termes : tout est obj
 **classe**   
 
 	contiennent la définition ds objets.  
@@ -106,7 +107,7 @@
 
 **méthode finale**  
 
-	Si vous déclarez une méthode finale, toute classe fille de la classe comportant cette méthode finale 	héritera de cette méthode mais ne pourra la redéfinir  
+	Si vous déclarez une méthode finale, toute classe fille de la classe comportant cette méthode finale héritera de cette méthode mais ne pourra la redéfinir  
 	
 	syntaxe: final public function recevoirDegats(){ }
 
