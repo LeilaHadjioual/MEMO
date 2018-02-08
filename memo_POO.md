@@ -1,22 +1,42 @@
 ﻿#MEMO POO
 
 faire de son site un ensemble d'objets qui interagissent entre eux.  
-En d'autres termes : tout est obj
+En d'autres termes : tout est objet  
+
+**Objet**  
+    
+    programme autosuffisant  
+    
 **classe**   
 
 	contiennent la définition ds objets.  
 	c’est le plan de fabrication d’un objet.  
 	On peut s’en servir autant qu’on veut.  
-	Tout objet issu de classe possède les variables et fonctions.
+	Tout objet issu de classe possède les variables et fonctions.  
+	ex:(moule)
 
 **Instance**  
 
 	se servir d’une classe pour créer un objet  
 	(une instance est un objet)
 
-**attribut :** variables 
+**Instanciation**  
 
-**méthode :** fonction
+    créer un objet  
+        ex : $t = new triangle();  
+     $t est une instance  
+     new : terme qui appelle l'objet  
+     triangle() : objet  
+     
+     $t est une instance de l'objet triangle    
+
+**attribut :**   
+
+    variables d'une classe, peut être publique, privée ou protégée
+
+**méthode :**   
+    
+        fonction de classe
 
 **encapsulation**  
 
@@ -26,8 +46,10 @@ En d'autres termes : tout est obj
 **Visibilité d’un attribut ou méthode**  
 	
 	inutile de masquer les méthodes
-		- public, on y a accès depuis n’importe ou,
-		- privé: accès depuis l’intérieur de la classe
+		- public, on y a accès depuis n’importe ou. visible par toutes les méthodes, classes...
+		- privé: accès depuis l’intérieur de la classe. on ne veut pas modifier même par héritage.  
+		        connu de sa propre classe seulement, inaccessible par une autre classe.  
+		- protected : accessible par sa propre classe et classe fille.
 	
 **syntaxe attribut privé-public-protected:**  
  
@@ -47,7 +69,10 @@ En d'autres termes : tout est obj
 	syntaxe: public function setExperience($experience)
   
 **constructeur**  
-	
+
+	méthode appelée lors de la construction d'un objet (pendant l'instanciation).   
+	il a toujours le nom de la classe et est appelé par défaut.  
+	possible d'avoir plusieur contructeurs dans une classe mais pas avec le meme nbr de paramètre sinon ne saura pas lequel appelé pendant l'instanciation.
 	sert à construire l'objet, modifie les attributs
 	utile si des attributs doivent être initialisés ou qu'une connexion à la BDD doit être faite.  
 	il est exécuté dès la création de l'objet et aucune valeur ne doit être retournée.  
@@ -111,6 +136,20 @@ En d'autres termes : tout est obj
 	
 	syntaxe: final public function recevoirDegats(){ }
 
+**cloner**  
 
+    dupliquer  
+        ex : $t3 = new triangle();
+            $t3a = $t3 ;  
+     
+**surcharger**
+
+    redefinir une méthode dans une classe fille. remplace la methode de la classe parent  
+    ex : draw ( class figure : function draw //sans rien, class polygone : function draw //définit, class triangle et rectangle // draw hérité, class cercle: draw definit)  
+
+**abstrait**  
+
+    classe abstraite pour ne pas pouvoir y accéder. aucune possiblité de l'instancier.  
+        ex : abstract class figure    
 
 
